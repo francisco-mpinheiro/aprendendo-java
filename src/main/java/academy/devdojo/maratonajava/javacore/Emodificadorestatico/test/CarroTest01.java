@@ -5,17 +5,18 @@ import academy.devdojo.maratonajava.javacore.Emodificadorestatico.dominio.Carro;
 public class CarroTest01 {
 
     static void main(String[] args) {
-        // Carro carro = new Carro("BMW", 300.0 );
-        //Carro carro2 = new Carro("Mercedes", 320.0 );
-       // Carro carro3 = new Carro("Audi", 340.0);
-        System.out.println(Carro.velocidadeLimite);
-        Carro.velocidadeLimite = 180;
-        System.out.println(Carro.velocidadeLimite);
-       // carro.imprimeCarro();
+         Carro carro = new Carro("BMW", 300.0 );
+        Carro carro2 = new Carro("Mercedes", 320.0 );
+        Carro carro3 = new Carro("Audi", 340.0);
 
-       // carro2.imprimeCarro();
+        Carro.setVelocidadeLimite(180);
 
-      //  carro3.imprimeCarro();
+       carro.imprimeCarro();
+
+
+       carro2.imprimeCarro();
+
+       carro3.imprimeCarro();
     }
 
 }
