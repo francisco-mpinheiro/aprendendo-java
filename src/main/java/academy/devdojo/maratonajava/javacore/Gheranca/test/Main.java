@@ -10,7 +10,7 @@ public class Main {
         endereco.setRua("Rua 10");
         endereco.setCep("73187198");
 
-        Pessoa pessoa = new Pessoa();
+        Pessoa pessoa = new Pessoa("Francisco");
         pessoa.setCpf("32132112311");
 
         pessoa.setEndereco(endereco);
@@ -21,7 +21,7 @@ public class Main {
         endereco2.setCep("43254234");
         endereco2.setRua("Avenida C");
 
-        Funcionario funcionario = new Funcionario();
+        Funcionario funcionario = new Funcionario("Francisco");
         funcionario.setCpf("444.444.444-44");
         funcionario.setEndereco(endereco2);
         funcionario.setSalario(20000);
