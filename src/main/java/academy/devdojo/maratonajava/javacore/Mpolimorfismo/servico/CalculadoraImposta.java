@@ -1,25 +1,25 @@
 package academy.devdojo.maratonajava.javacore.Mpolimorfismo.servico;
 
 import academy.devdojo.maratonajava.javacore.Mpolimorfismo.dominio.Computador;
+import academy.devdojo.maratonajava.javacore.Mpolimorfismo.dominio.Produto;
+import academy.devdojo.maratonajava.javacore.Mpolimorfismo.dominio.Tomate;
 import academy.devdojo.maratonajava.javacore.Mpolimorfismo.dominio.Videogame;
 
 public class CalculadoraImposta {
-    public static void calcularImpostoComputador(Computador computador){
-        System.out.println("Relatório de imposto do computador");
-        double imposto = computador.calcularTributo();
-        System.out.println("computador " + computador.getNome());
-        System.out.printf("Valor %.3f", computador.getValor());
+    public static void calcularImpostoProduto(Produto produto){
+        System.out.println("Relatório de imposto");
+        double imposto = produto.calcularTributo();
+        System.out.println("Produto: " + produto.getNome());
+        System.out.printf("Valor %.2f ", produto.getValor());
         System.out.println();
-        System.out.printf("Imposto %.3f", imposto);
+        System.out.printf("Imposto %.2f ", imposto);
+        if(produto instanceof Tomate){
+           // Tomate tomate = (Tomate) produto;
+            System.out.println(((Tomate) produto).getDataValidade());
+        }
+
     }
 
-    public static void calcularImpostoVideogame(Videogame videogame){
-        System.out.println("Relatório de imposto do computador");
-        double imposto = videogame.calcularTributo();
-        System.out.println("videogame " + videogame.getNome());
-        System.out.printf("Valor %.3f", videogame.getValor());
-        System.out.println();
-        System.out.printf("imposto %.3f ", imposto);
-    }
+
 
 }

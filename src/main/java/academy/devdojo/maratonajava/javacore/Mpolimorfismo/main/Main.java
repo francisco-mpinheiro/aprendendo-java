@@ -14,9 +14,9 @@ public class Main {
 
 
 
-        CalculadoraImposta.calcularImpostoComputador(computador);
+        CalculadoraImposta.calcularImpostoProduto(computador);
         System.out.println();
         System.out.println("----------------");
-        CalculadoraImposta.calcularImpostoVideogame(videogame);
+        CalculadoraImposta.calcularImpostoProduto(videogame);
     }
 }
